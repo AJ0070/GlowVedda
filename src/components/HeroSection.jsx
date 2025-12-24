@@ -116,7 +116,8 @@ const HeroSection = () => {
                                 repeat: Infinity,
                                 ease: "easeInOut"
                             }}
-                            className="absolute -bottom-8 -left-8 w-64 h-64 bg-amber-400 rounded-full blur-3xl opacity-20 z-0"
+                            style={{ willChange: "transform" }}
+                            className="absolute -bottom-8 -left-8 w-64 h-64 bg-amber-400 rounded-full blur-3xl opacity-20 z-0 hidden md:block"
                         />
                         <motion.div
                             animate={{
@@ -128,7 +129,8 @@ const HeroSection = () => {
                                 repeat: Infinity,
                                 ease: "easeInOut"
                             }}
-                            className="absolute -top-8 -right-8 w-64 h-64 bg-blue-400 rounded-full blur-3xl opacity-20 z-0"
+                            style={{ willChange: "transform" }}
+                            className="absolute -top-8 -right-8 w-64 h-64 bg-blue-400 rounded-full blur-3xl opacity-20 z-0 hidden md:block"
                         />
                     </motion.div>
                 </div>

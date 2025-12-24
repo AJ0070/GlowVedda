@@ -23,7 +23,8 @@ const CallToAction = () => {
                     repeat: Infinity,
                     ease: "linear"
                 }}
-                className="absolute top-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl"
+                style={{ willChange: "transform" }}
+                className="absolute top-0 right-0 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl hidden md:block"
             />
             <motion.div
                 animate={{
@@ -35,7 +36,8 @@ const CallToAction = () => {
                     repeat: Infinity,
                     ease: "linear"
                 }}
-                className="absolute bottom-0 left-0 w-96 h-96 bg-blue-950 opacity-10 rounded-full blur-3xl"
+                style={{ willChange: "transform" }}
+                className="absolute bottom-0 left-0 w-96 h-96 bg-blue-950 opacity-10 rounded-full blur-3xl hidden md:block"
             />
 
             <div className="container mx-auto px-4 relative z-10">
