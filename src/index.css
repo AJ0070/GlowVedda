@@ -3,6 +3,40 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 142 72% 15%; /* Dark Green Text */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 142 72% 15%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 142 72% 15%;
+ 
+    --primary: 356 75% 45%; /* Christmas Red */
+    --primary-foreground: 0 0% 100%;
+ 
+    --secondary: 142 72% 29%; /* Christmas Green */
+    --secondary-foreground: 0 0% 100%;
+ 
+    --muted: 142 20% 96%;
+    --muted-foreground: 142 10% 40%;
+ 
+    --accent: 45 93% 47%; /* Gold */
+    --accent-foreground: 142 72% 15%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 142 20% 90%;
+    --input: 142 20% 90%;
+    --ring: 356 75% 45%;
+ 
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
     * {
         @apply border-border;
     }

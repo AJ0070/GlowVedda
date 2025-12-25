@@ -35,20 +35,20 @@ const HeroSection = () => {
                         <motion.h1
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.3 }}
-                            className="text-5xl md:text-6xl font-bold text-blue-950 leading-tight"
+                            transition={{ duration: 0.8 }}
+                            className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
                         >
-                            Glow From Within
+                            Glow This <span className="text-primary">Christmas</span> with Natural Radiance
                         </motion.h1>
-
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.4 }}
-                            className="text-lg text-gray-600 leading-relaxed"
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
                         >
-                            Discover the power of nature with GlowVedda's premium skincare collection.
-                            Formulated with pure ingredients for radiant, healthy skin.
+                            Celebrate the season of joy with our premium collection.
+                            <br />
+                            <span className="font-semibold text-secondary">Upto 30% OFF</span> on all products!
                         </motion.p>
 
                         <motion.div
