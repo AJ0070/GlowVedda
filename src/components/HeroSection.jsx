@@ -36,7 +36,7 @@ const HeroSection = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
+                            className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 font-christmas"
                         >
                             Glow This <span className="text-primary">Christmas</span> with Natural Radiance
                         </motion.h1>

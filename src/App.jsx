@@ -6,6 +6,8 @@ import BenefitsSection from '@/components/BenefitsSection';
 import CallToAction from '@/components/CallToAction';
 import { Toaster } from '@/components/ui/toaster';
 import SnowEffect from '@/components/SnowEffect';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 function App() {
     return (
@@ -32,10 +34,12 @@ function App() {
             </Helmet>
             <div className="min-h-screen bg-white">
                 <SnowEffect />
+                <Header />
                 <HeroSection />
                 <ProductShowcase />
                 <BenefitsSection />
                 <CallToAction />
+                <Footer />
                 <Toaster />
             </div>
         </>

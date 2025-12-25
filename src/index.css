@@ -1,53 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 142 72% 15%; /* Dark Green Text */
-    
-    --card: 0 0% 100%;
-    --card-foreground: 142 72% 15%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 142 72% 15%;
- 
-    --primary: 356 75% 45%; /* Christmas Red */
-    --primary-foreground: 0 0% 100%;
- 
-    --secondary: 142 72% 29%; /* Christmas Green */
-    --secondary-foreground: 0 0% 100%;
- 
-    --muted: 142 20% 96%;
-    --muted-foreground: 142 10% 40%;
- 
-    --accent: 45 93% 47%; /* Gold */
-    --accent-foreground: 142 72% 15%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 142 72% 15%;
+        /* Dark Green Text */
 
-    --border: 142 20% 90%;
-    --input: 142 20% 90%;
-    --ring: 356 75% 45%;
- 
-    --radius: 0.5rem;
-  }
-}
+        --card: 0 0% 100%;
+        --card-foreground: 142 72% 15%;
 
-@layer base {
-    * {
-        @apply border-border;
+        --popover: 0 0% 100%;
+        --popover-foreground: 142 72% 15%;
+
+        --primary: 356 75% 45%;
+        /* Christmas Red */
+        --primary-foreground: 0 0% 100%;
+
+        --secondary: 142 72% 29%;
+        /* Christmas Green */
+        --secondary-foreground: 0 0% 100%;
+
+        --muted: 142 20% 96%;
+        --muted-foreground: 142 10% 40%;
+
+        --accent: 45 93% 47%;
+        /* Gold */
+        --accent-foreground: 142 72% 15%;
+
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+
+        --border: 142 20% 90%;
+        --input: 142 20% 90%;
+        --ring: 356 75% 45%;
+
+        --radius: 0.5rem;
     }
 
-    body {
-        @apply bg-white text-gray-900;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: repeating-linear-gradient(45deg,
+                hsl(var(--primary)),
+                hsl(var(--primary)) 10px,
+                #ffffff 10px,
+                #ffffff 20px);
+        border-radius: 6px;
+        border: 2px solid white;
     }
 }
 
 @layer utilities {
+    .font-christmas {
+        font-family: 'Mountains of Christmas', cursive;
+    }
+
+    .candy-cane-border-b {
+        border-bottom: 5px solid transparent;
+        border-image: repeating-linear-gradient(45deg,
+                hsl(var(--primary)),
+                hsl(var(--primary)) 10px,
+                #ffffff 10px,
+                #ffffff 20px) 1;
+    }
+
+    .candy-cane-border-t {
+        border-top: 5px solid transparent;
+        border-image: repeating-linear-gradient(45deg,
+                hsl(var(--primary)),
+                hsl(var(--primary)) 10px,
+                #ffffff 10px,
+                #ffffff 20px) 1;
+    }
+
+    .santa-hat-overlay {
+        position: relative;
+        display: inline-block;
+    }
+
+    .santa-hat-overlay::after {
+        content: '🎅';
+        position: absolute;
+        top: -15px;
+        right: -10px;
+        font-size: 1.5rem;
+        transform: rotate(15deg);
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+    }
+
     .line-clamp-2 {
         display: -webkit-box;
         -webkit-line-clamp: 2;
